@@ -1,10 +1,13 @@
 # Gen-AI Assistant 
 
-A Python-based conversational AI chatbot designed to interact with users in natural language. The Gen-AI Assistant leverages large language models (LLMs) to provide intelligent, context-aware responses for queries and can be extended for research, education, or productivity applications.
+A Python-based conversational AI chatbot designed to interact with users in natural language. 
+The Gen-AI Assistant leverages large language models (LLMs) to provide intelligent, context-aware responses for queries and can be extended for research, education, or productivity applications.
 
 # Description
 
-The Gen-AI Assistant is a flexible AI chatbot implemented in Python. It can process user queries, generate relevant responses, and provide an interactive conversational experience. Its modular design allows easy integration with different LLMs, and it can be extended for advanced features such as multi-turn dialogue, document-based question answering, or generative AI applications.
+The Gen-AI Assistant is a flexible AI chatbot implemented in Python. 
+It can process user queries, generate relevant responses, and provide an interactive conversational experience. 
+Its modular design allows easy integration with different LLMs, and it can be extended for advanced features such as multi-turn dialogue, document-based question answering, or generative AI applications.
 
 # Key benefits
 
