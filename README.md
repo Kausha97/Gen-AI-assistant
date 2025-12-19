@@ -6,7 +6,7 @@ A Python-based conversational AI chatbot designed to interact with users in natu
 
 The Gen-AI Assistant is a flexible AI chatbot implemented in Python. It can process user queries, generate relevant responses, and provide an interactive conversational experience. Its modular design allows easy integration with different LLMs, and it can be extended for advanced features such as multi-turn dialogue, document-based question answering, or generative AI applications.
 
-# Key benefits:
+# Key benefits
 
 Simple Python-based implementation for quick setup
 Extensible architecture for AI model experimentation
@@ -49,7 +49,6 @@ Customer support chatbot prototypes
 Research projects exploring conversational AI or LLMs
 Interactive personal assistants for productivity tasks
 
-📞 Contact
+#  Contact
 
 GitHub Repository: https://github.com/Kausha97/Gen-AI-assistant
-License: MIT License
