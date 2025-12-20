@@ -87,11 +87,11 @@ def main():
                 st.error(f"Error processing PDFs: {e}")
 
         st.write("---")
-        st.write("AI App created by @ Gurpreet Kaur")
+        st.write("AI App created by @ Kausha Godhani")
         st.markdown(
             """
             <div style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0E1117; padding: 10px; text-align: center; color: white;">
-            © Gurpreet Kaur | Made with ❤️
+            © Kausha Godhani | 
             </div>
             """,
             unsafe_allow_html=True
