@@ -1,0 +1,189 @@
+\documentclass[final]{beamer}
+
+% Poster size and scale
+\usepackage[size=a0,scale=1.35,orientation=portrait]{beamerposter}
+\usetheme{default}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usetikzlibrary{shapes,arrows,positioning,decorations.pathmorphing,backgrounds}
+
+% Colors - Gradient Purple/Lavender
+\definecolor{titlepurple}{RGB}{102,0,153}
+\definecolor{blockpurple}{RGB}{153,51,204}
+\definecolor{blocklavender}{RGB}{230,220,255}
+\definecolor{arrowpurple}{RGB}{120,0,180}
+
+% Adjust margins
+\setbeamersize{text margin left=2cm, text margin right=2cm}
+
+% Stretch minipages to fill height
+\newlength{\myheight}
+\setlength{\myheight}{0.95\textheight}
+
+% Customize block colors
+\setbeamercolor{block title}{bg=blockpurple, fg=white}
+\setbeamercolor{block body}{bg=blocklavender, fg=black}
+
+% Title information
+\title{\Huge \color{titlepurple}\textbf{Gen-AI Assistant}}
+\author{\LARGE Kausha Godhani}
+\institute{
+\Large GitHub Repository:\\
+\href{https://github.com/Kausha97/Gen-AI-assistant}{github.com/Kausha97/Gen-AI-assistant}
+}
+
+\begin{document}
+
+\begin{frame}[t]
+
+% ---------------- TITLE ----------------
+\begin{center}
+\vspace{0.5cm}
+{\Huge \color{titlepurple}\textbf{Gen-AI Assistant}}\\[1cm]
+{\LARGE Kausha Godhani}\\[0.5cm]
+{\Large Generative Artificial Intelligence Project}
+\end{center}
+
+\vspace{0.5cm}
+
+% ---------------- CONTENT ----------------
+\begin{minipage}[t][\myheight][t]{0.95\linewidth}
+
+% -------- INTRODUCTION --------
+\begin{block}{Introduction}
+\large
+The Gen-AI Assistant is a conversational AI system enabling users to interact using natural language. It applies Generative AI techniques to generate accurate, context-aware responses in real-time.
+\end{block}
+
+\vspace{0.8cm}
+
+% -------- SYSTEM ARCHITECTURE --------
+\begin{block}{System Architecture}
+\centering
+\begin{tikzpicture}[
+node distance=1.8cm,
+every node/.style={
+    draw,
+    rectangle,
+    rounded corners,
+    align=center,
+    minimum width=6cm,
+    minimum height=1.5cm,
+    fill=blocklavender,
+    drop shadow
+},
+arrow/.style={->, thick, color=arrowpurple}
+]
+
+\node (user) {User};
+\node (ui) [below=of user] {User Interface};
+\node (process) [below=of ui] {Query Processing};
+\node (model) [below=of process] {Generative AI Model};
+\node (response) [below=of model] {Response Generation};
+
+\draw[arrow] (user) -- (ui);
+\draw[arrow] (ui) -- (process);
+\draw[arrow] (process) -- (model);
+\draw[arrow] (model) -- (response);
+\draw[arrow] (response) -- (ui);
+
+\end{tikzpicture}
+
+\vspace{0.3cm}
+\small
+Figure: Conceptual architecture of the Gen-AI Assistant.
+\end{block}
+
+\vspace{0.8cm}
+
+% -------- KEY FEATURES --------
+\begin{block}{Key Features}
+\large
+\begin{itemize}
+\item \faComments\ Natural language conversational interface
+\item \faRobot\ AI-powered response generation
+\item \faCogs\ Modular and scalable system design
+\item \faClock\ Real-time interaction
+\end{itemize}
+\end{block}
+
+\vspace{0.8cm}
+
+% -------- USER INTERFACE --------
+\begin{block}{Conceptual User Interface}
+\centering
+\begin{tikzpicture}[
+every node/.style={
+    draw,
+    rectangle,
+    rounded corners,
+    align=center,
+    minimum width=10cm,
+    minimum height=1.5cm,
+    fill=blocklavender,
+    drop shadow
+},
+node distance=1.8cm
+]
+
+\node (title) {Gen-AI Assistant Interface};
+\node (q1) [below=of title] 
+{User: \\ "What is Generative AI?"};
+\node (a1) [below=of q1] 
+{Assistant: \\ "Generative AI creates content using learned patterns."};
+\node (input) [below=of a1] 
+{User Input Text Box};
+
+\end{tikzpicture}
+
+\vspace{0.3cm}
+\small
+Figure: Conceptual UI representation with sample conversation.
+\end{block}
+
+\vspace{0.8cm}
+
+% -------- WORKFLOW --------
+\begin{block}{Workflow}
+\large
+\begin{enumerate}
+\item User submits a query
+\item System interprets input
+\item Generative AI model generates response
+\item Response displayed to the user
+\end{enumerate}
+\end{block}
+
+\vspace{0.8cm}
+
+% -------- APPLICATIONS --------
+\begin{block}{Applications}
+\large
+\begin{itemize}
+\item \faChalkboardTeacher\ Educational assistants
+\item \faComments\ Conversational AI systems
+\item \faFlask\ NLP research
+\item \faUsers\ Human-computer interaction
+\end{itemize}
+\end{block}
+
+\vspace{0.8cm}
+
+% -------- CONCLUSION --------
+\begin{block}{Conclusion}
+\large
+The Gen-AI Assistant demonstrates the effective use of Generative AI in building intelligent conversational systems. This project provides a foundation for future enhancements and advanced AI applications.
+\end{block}
+
+\vspace{0.8cm}
+
+\end{minipage}
+
+\end{frame}
+
+\end{document}
