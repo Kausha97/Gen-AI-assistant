@@ -1,13 +1,12 @@
 streamlit
-google-generativeai
-python-dotenv
-langchain
 PyPDF2
 faiss-cpu
-google-genai
+google-generativeai
+langchain
 langchain-community
-langchain_google_genai
-numpy==1.25.2
+langchain-google-genai
+python-dotenv
+numpy>=1.25.3
 
 
 
