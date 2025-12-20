@@ -4,4 +4,12 @@ python-dotenv
 langchain
 PyPDF2
 faiss-cpu
+google-genai
+langchain-community
 langchain_google_genai
+numpy==1.25.2
+
+
+
+
+
